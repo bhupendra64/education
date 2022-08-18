@@ -1,0 +1,174 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+}
+body{
+    background-image: url(./lapi.webp);
+    width: 100%;
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.nav{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4%;
+    color: #fff;
+}
+.middle{
+    display: flex;
+    align-items: center;
+}
+li{
+    list-style: none;
+    margin:20px;
+}
+.navbtn{
+    width: 80px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: rgb(212, 19, 132);
+   
+    
+}
+
+
+.main{
+    width:100% ;
+  /*  background-color: rgb(17, 24, 21);*/
+    
+    padding-left: 4%;
+    color: aliceblue;
+    padding-top: 11%;
+}
+.bigbox{
+    width: 500px;
+    
+    
+   
+}
+.boxp1{
+    font-size: 23px;
+    margin-bottom: 20px;
+}
+.boxh{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.box{
+    width: 100%;
+    
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    
+}
+
+.box button{
+    width: 140px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(100, 96, 96);
+    border-radius: 5px;
+    color: #fff;
+    background: none;
+    font-size: 18px;
+
+
+}
+.btn-1{
+      margin-right: 30px;
+    background: rgb(212, 19, 132) !important;
+    border: none !important;
+}
+
+.bi-list{
+    display: none;
+}
+
+span{
+    background: #121FCF;
+background: repeating-radial-gradient(ellipse farthest-corner at center center, #121FCF 0%, #CF1512 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+ margin: 0 1px;
+ z-index: 3;
+}
+
+
+
+
+
+
+/*media qurry*/
+@media screen and (max-width:770px) {
+    .middle{
+        display: none;
+        
+    }
+    .bi-list{
+        display: block;
+        font-size: 20px;
+     
+    }
+    .nav h1{
+        margin-left: 10px;
+    }
+    .navleft{
+        display: flex;
+    align-items: centerz;
+    }
+    .bi{
+        margin-top: 4px;
+     }
+    
+}
+
+
+@media screen and (max-width:550px) {
+    .main{
+       width: 100%;
+       display: flex;
+       justify-content: center;
+     
+        
+    }
+    .bigbox{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px;
+
+        justify-content: center;
+        text-align: center;
+         
+     }
+     .box{
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+
+     }
+    
+     .box button{
+        width: 100%;
+        margin: 0 !important;
+        margin-bottom:20px !important  ;
+     }
+    
+}
